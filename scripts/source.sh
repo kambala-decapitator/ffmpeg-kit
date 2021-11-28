@@ -32,10 +32,10 @@ get_library_source() {
     SOURCE_TYPE="TAG"
     ;;
   ffmpeg)
-    SOURCE_REPO_URL="https://github.com/tanersener/FFmpeg"
-    SOURCE_ID="30322ebe3c55d0fb18bea4ae04d0fcaf1f97d27f"
-    SOURCE_TYPE="COMMIT"
-    SOURCE_GIT_DESCRIBE="n4.5-dev-3393-g30322ebe3c" # git describe --tags
+    SOURCE_REPO_URL="https://github.com/FFmpeg/FFmpeg"
+    SOURCE_ID="n4.4.2"
+    SOURCE_TYPE="TAG"
+    SOURCE_GIT_DESCRIBE="n4.4.2"
     ;;
   fontconfig)
     SOURCE_REPO_URL="https://github.com/tanersener/fontconfig"
