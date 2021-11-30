@@ -47,25 +47,21 @@ armv7)
   TARGET_CPU="armv7"
   TARGET_ARCH="armv7"
   ASM_OPTIONS=" --enable-neon --enable-asm"
-  BITCODE_FLAGS="-fembed-bitcode -Wc,-fembed-bitcode"
   ;;
 armv7s)
   TARGET_CPU="armv7s"
   TARGET_ARCH="armv7s"
   ASM_OPTIONS=" --enable-neon --enable-asm"
-  BITCODE_FLAGS="-fembed-bitcode -Wc,-fembed-bitcode"
   ;;
 arm64)
   TARGET_CPU="armv8"
   TARGET_ARCH="aarch64"
   ASM_OPTIONS=" --enable-neon --enable-asm"
-  BITCODE_FLAGS="-fembed-bitcode -Wc,-fembed-bitcode"
   ;;
 arm64-mac-catalyst)
   TARGET_CPU="armv8"
   TARGET_ARCH="aarch64"
   ASM_OPTIONS=" --enable-neon --enable-asm"
-  BITCODE_FLAGS="-fembed-bitcode -Wc,-fembed-bitcode"
   ;;
 arm64-simulator)
   TARGET_CPU="armv8"
@@ -77,7 +73,6 @@ arm64e)
   TARGET_CPU="armv8.3-a"
   TARGET_ARCH="aarch64"
   ASM_OPTIONS=" --enable-neon --enable-asm"
-  BITCODE_FLAGS="-fembed-bitcode -Wc,-fembed-bitcode"
   ;;
 i386)
   TARGET_CPU="i386"
@@ -95,7 +90,6 @@ x86-64-mac-catalyst)
   TARGET_CPU="x86_64"
   TARGET_ARCH="x86_64"
   ASM_OPTIONS=" --disable-neon --disable-asm"
-  BITCODE_FLAGS="-fembed-bitcode -Wc,-fembed-bitcode"
   ;;
 esac
 
