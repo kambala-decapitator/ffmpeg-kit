@@ -401,8 +401,8 @@ if [ "$GPL_ENABLED" == "yes" ]; then
   CONFIGURE_POSTFIX+=" --enable-gpl"
 fi
 
-# ALWAYS BUILD SHARED LIBRARIES
-BUILD_LIBRARY_OPTIONS="--enable-shared --disable-static --install-name-dir=@rpath"
+# ALWAYS BUILD STATIC LIBRARIES
+BUILD_LIBRARY_OPTIONS="--enable-static --disable-shared"
 
 # OPTIMIZE FOR SPEED INSTEAD OF SIZE
 if [[ -z ${FFMPEG_KIT_OPTIMIZED_FOR_SPEED} ]]; then
@@ -600,7 +600,7 @@ install_ffmpeg "true"
 # CLEAN THE OUTPUT OF FIRST BUILD
 find . -name "*.dylib" -delete 1>>"${BASEDIR}"/build.log 2>&1
 
-echo -e "\nShared libraries built successfully. Building frameworks.\n" 1>>"${BASEDIR}"/build.log 2>&1
+echo -e "\nStatic libraries built successfully. Building frameworks.\n" 1>>"${BASEDIR}"/build.log 2>&1
 
 create_temporary_framework() {
   local FRAMEWORK_NAME="$1"
